@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+    <style>
+        body{
+            margin: 0%;
+        }
+        .container{
+            height: 100vh;
+            background-color: lightseagreen;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        
+             font-size: 1rem;
+             
+           
+            
+        
+        
+         }
+        
+    .image-container {
+    width: 600px; 
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    margin-top: 150px;
+    justify-items: center;
+    align-items: center;
+    
+    
+
+    
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  img{
+    border-radius: 100%;
+  }
+  b{
+    position: absolute;
+    color: white;
+    letter-spacing: 1px;
+
+  }
+  article{
+    position: relative;
+    bottom: 200px;
+    margin-left: 270px;
+    animation: rotatein 1s ease-in-out forwards;
+    animation-delay: 1s;
+    
+  }
+ 
+  
+
+
+
+
+      
+            
+        
+        
+        
+            
+        
+        p{
+            position: absolute;
+            top: -100px;
+            font-size:larger;
+            letter-spacing: 4px;
+            color: white;
+            animation: slidedown 1s ease-in-out forwards;
+
+            
+        }
+        article{
+            animation-delay: 0s;
+        }
+        
+        
+       @keyframes slidedown{
+        0%{
+            top: -100px;
+       
+
+        }
+        100%{
+            top: 80px;
+        }
+       }
+       @keyframes rotatein{
+        0%{
+            opacity: 0;
+            transform: rotate(200deg);
+        }
+        100%{
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+       }
+
+        
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+           <p class="slidedown">PROJECT EXPERIENCE</p> 
+    
+           <div class="image-container">
+            <img src="./tanjiro.jpg" alt="">
+            <img src="./nezuko.jpg" alt="">
+            <img src="./demonslayer.jpg" alt="">
+            
+           </div> 
+           
+           
+           
+          
+                
+                
+           
+           
+          
+         
+    </div>
+    <article>
+        <b class="animate__animated animate__animate__rotateIn">Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and 
+            illustrated by Koyoharu Gotouge.
+            <br> It was serialized in Shueisha's shōnen manga magazine
+             Weekly Shōnen Jump from February 2016 to May 2020, 
+             </b>
+         
+       </article>
+    
+    
+</body>
+</html
